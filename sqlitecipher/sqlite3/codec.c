@@ -1971,7 +1971,7 @@ GetCipherType(sqlite3* db)
   if (strlen(cipher->m_name) > 0)
   {
     cipherType = cipher->m_value;
-    //cipher->m_value = cipher->m_default;
+    cipher->m_value = cipher->m_default;
   }
   return cipherType;
 }
